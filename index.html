@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="font-family: 'Stretch'">KRAHEB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="navbar">
+        <div id="logo_fade" class="logo">
+          <img id="logo_img" src="img/logo.png" alt="logo" width="70%" />
+          <p id="brand">KRAAHEB</p>
+        </div>
+        <div id="menu" class="navbar_right">
+          <ul id="links" class="links">
+            <li onclick="home()">HOME</li>
+            <li onclick="cars_scroll()">CARS</li>
+            <li onclick="about_scroll()">ABOUT US</li>
+            <li id="contact">CONTACT</li>
+          </ul>
+          <div>
+            <img id="login_icon" src="img/user_white.png" alt="" width="100%" />
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <video class="mp4" id="video" width="100%" autoplay muted loop>
+          <source src="video/cars.mp4" type="video/mp4" />
+        </video>
+        <div id="video_text" class="video_text">
+          <p>Nissan Skyline GT-R R34</p>
+          <span
+            style="
+              font-size: 28px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            "
+            >Starting MSRP <span style="font-size: 28px">$146,740*</span></span
+          >
+          <p
+            style="
+              font-size: 10px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            "
+          >
+            45th Anniversary Edition shown in Mikan Blast. Prototype shown.
+            Professional driver on closed course.
+          </p>
+        </div>
+        <div id="hamburger" onclick="roll_menu()" class="hamburger">
+          <img src="img/hamburge button.png" alt="" width="100%" />
+        </div>
+        <div id="login_state" class="login_state">
+          <img src="img/car_icon.png" alt="" width="50%" />
+          <p>Login for personalization, saved searches, and security.</p>
+          <input id="go_to_login_page" type="login" value="LOGIN" />
+        </div>
+        <div id="target"></div>
+      </div>
+      <div class="cars">
+        <div id="cars_section" class="title">
+          <p>EXPLORE ALL CARS</p>
+        </div>
+        <div data-aos="fade-up" id="cards" class="cards">
+          <div id="card1" class="card">
+            <img src="img/sport.jpg" alt="" width="100%" />
+            <div class="card_name1">
+              <p>SPORTS</p>
+            </div>
+          </div>
+          <div id="card2" class="card">
+            <img
+              src="https://w0.peakpx.com/wallpaper/997/508/HD-wallpaper-gtr-r34-skyline-drift-forza-girl-nissan-r32-tuning.jpg"
+              alt=""
+              width="100%"
+            />
+            <div class="card_name2">
+              <p>JDM</p>
+            </div>
+          </div>
+          <div id="card3" class="card">
+            <img
+              src="https://w0.peakpx.com/wallpaper/783/423/HD-wallpaper-thar-red-thar-red-thar-car-jeep.jpg"
+              alt=""
+              width="100%"
+            />
+            <div class="card_name3">
+              <p>SUV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-down" id="about" class="about">
+        <video class="mp4_2" id="video" autoplay muted loop>
+          <source src="video/about.mp4" type="video/mp4" />
+        </video>
+        <div class="about_filter"></div>
+        <div class="about_text">
+          <p>KRAAHEB</p>
+          <p>Your Ultimate Destination For Cars</p>
+          <p style="font-family: 'Roboto'">
+            Kraheb, where automotive dreams meet reality. We are not just a car
+            retailer, we are your trusted partner in the pursuit of automotive
+            excellence. With a passion for luxury vehicles and a commitment to
+            exceptional service.
+          </p>
+          <p>DRIVE EXCELLENCE. <span id="choose">CHOOOSE KRAAHEB.</span></p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png" alt="">
+              <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt="">
+              <img src="https://companyleader.themilitaryleader.com/wp-content/uploads/2021/07/instagram-circle-icon-png-4.png" alt="">
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

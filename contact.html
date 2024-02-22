@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="" width="100%" />
+          <p>KRAAHEB</p>
+        </div>
+        <div id="hamburger" class="hamburger">
+          <img src="img/hamburge button.png" alt="" width="100%" />
+        </div>
+      </div>
+      <div id="options" class="options">
+        <div class="options_login"></div>
+        <ul class="options_links">
+          <li id="home">HOME</li>
+          <li id="cars">CARS</li>
+          <li id="about us">ABOUT US</li>
+          <li is="contact">CONTACT</li>
+        </ul>
+      </div>
+      <div class="contact_container">
+        <div class="left_col">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.979109874127!2d10.190722700000002!3d36.8190205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35e836b3e86f%3A0x3e22411f6da51463!2sKraheb!5e0!3m2!1sfr!2stn!4v1697304548992!5m2!1sfr!2stn"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="right_col">
+          <div class="contact_form">
+            <form>
+              <label for="name">NAME</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                spellcheck="false"
+                autocomplete="off"
+              />
+
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                spellcheck="false"
+                autocomplete="off"
+              />
+
+              <label for="message">MESSSAGE</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                spellcheck="false"
+                autocomplete="off"
+              ></textarea>
+
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>

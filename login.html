@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="login_container">
+      <div class="video">
+        <video src="video/Red Abstract Liquid.mp4" autoplay muted loop></video>
+      </div>
+      <form data-aos="zoom-in-up" id="login_box" class="login_box">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo" />
+          <p style="font-family: 'Stretch'; font-size: 26px">KRAAHEB</p>
+        </div>
+
+        <div class="inputs">
+          <p style="transition: 1s" id="sign_in_text">SIGN IN</p>
+          <div>
+            <input
+              id="username"
+              type="text"
+              name="user"
+              placeholder="Username"
+              spellcheck="false"
+              autocomplete="off"
+            />
+            <p id="username_message" class="message"></p>
+          </div>
+          <div>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              spellcheck="false"
+              autocomplete="off"
+            />
+            <p id="password_message" class="message"></p>
+          </div>
+          <div>
+            <input
+              id="date"
+              type="date"
+              name="birthday"
+              placeholder="Birthday"
+              spellcheck="false"
+              autocomplete="off"
+            />
+            <p id="age_message" class="message"></p>
+          </div>
+          <button
+            onclick="login()"
+            id="login_button"
+            class="login_button"
+            type="button"
+          >
+            LOG IN
+          </button>
+          <div class="signup_sentence" id="signup_sentence">
+            <x>Not on KRAAHEB yet? </x>
+            <button type="button" onclick="sign_up1()">Sign up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="login.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
